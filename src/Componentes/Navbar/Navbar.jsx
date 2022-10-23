@@ -1,55 +1,50 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+import Logo from '../../assets/img/LEGAL_VERSE_MATI-06.png';
 
 function Navbar() {
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="container-fluid">
         <Link to="/">
-          <a className="navbar-brand" href="#">
-            IMG
-          </a>
+          <img
+            src={Logo}
+            alt="10"
+            width="35"
+            height="45"
+            className="navbar-brand"
+          />
         </Link>
 
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li>
-              <a className="nav-link" href="#">
-                Servicio <span className="sr-only"></span>
-              </a>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+
+            <li className="nav-item">
+              <a className="nav-link dropdown-toggle">
+                Servicio-Dropdown
+              </a>  
             </li>
-            <li>
-              <Link to="Nosotros">Nosotros</Link>
+
+
+            <li className="nav-item">
+              <Link to="Nosotros" className="nav-link">
+                Nosotros
+              </Link>
             </li>
           </ul>
+
+
+          <div className="d-flex">
+            <Link to="/Paginas/Login"  className="btn btn-secondary btn-sm">Iniciar Sesion</Link>
+            <Link to="Paginas/Create" className="btn btn-outline-success">Registrarse</Link>
+            
+          </div>
         </div>
-        <div>
-          <Link to="Paginas/Login">
-            <button type="button" class="btn btn-primary">
-              Iniciar Sesion
-            </button>
-          </Link>
-          <Link to="Paginas/Create">
-            <button type="button" class="btn btn-info">
-              Registrarse
-            </button>
-          </Link>
-        </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 }
 

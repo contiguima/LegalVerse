@@ -1,10 +1,17 @@
 import React from 'react'
-//import Imagen from "./img/placeholder.png";
-
-const home = () => {
+import homeImage from '../../assets/img/abogados-contrato.jpg';
+function home () {
   return (
-    <h1> Soy el home </h1>
-  )
+    <div className='App'>
+      <div className="imagenDefondo">
+        <img src={homeImage} />
+      </div>
+      <div>
+        
+      </div>
+    </div>
+  );
+
 }
 
 export default home

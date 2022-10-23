@@ -11,7 +11,7 @@ import Nosotros from './Componentes/Paginas/Nosotros'
 function App() {
    return (
     <div className="App">
-        <Navbar/>
+      <Navbar/>
         <Routes>
          <Route path="/" element={ <Home />}/>
          <Route path="Paginas/Login" element={<Login/>}/>
@@ -19,8 +19,7 @@ function App() {
          <Route path="Nosotros" element={<Nosotros/>}/>
         </Routes>
         <Footer/>
-          
-    </div>
+    </div>    
   )
 }
 
