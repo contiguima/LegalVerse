@@ -1,5 +1,4 @@
 import './App.css'
-
 import Navbar from './Componentes/Navbar/Navbar'
 import Footer from './Componentes/Footer/Footer'
 import { Routes, Route, Link  } from 'react-router-dom'
@@ -16,7 +15,7 @@ function App() {
          <Route path="/" element={ <Home />}/>
          <Route path="Paginas/Login" element={<Login/>}/>
          <Route path="Paginas/Create" element={<CreateAccount/>}/>
-         <Route path="Nosotros" element={<Nosotros/>}/>
+         <Route path="/Nosotros" element={<Nosotros/>}/>
         </Routes>
         <Footer/>
     </div>    
