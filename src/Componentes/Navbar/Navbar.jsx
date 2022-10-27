@@ -28,20 +28,25 @@ function navbar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+            <NavDropdown title="Servicios" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Gestión</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">Asistencias</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Creación</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Firma digital</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Ofertas</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Revisioón</NavDropdown.Item>
+
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/Nosotros">Nosotros</Nav.Link>
           </Nav>
         </Navbar.Collapse>
+        <Navbar.Collapse className="justify-content-end">
+          <Navbar.Text>
+            <a href="/Paginas/Login">Iniciar Sesión</a>
+          </Navbar.Text>
+        </Navbar.Collapse>
+
       </Container>
     </Navbar>
   );
