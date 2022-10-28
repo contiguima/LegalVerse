@@ -5,9 +5,9 @@ function home() {
     <div className="App">
       <div>
         <img src={homeImage} width="100%" height="auto" />
-        <p>El mundo de las leyes, reiventado</p>
+        <h1 className="contenedor centrado eslogan">El mundo de las leyes, reiventado</h1>
       </div>
-      <div>
+      <div className="cuadrado contenedor">
         <h1>¿Quienes somos?</h1>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam
@@ -16,7 +16,7 @@ function home() {
           cum error cumque eum porro?
         </p>
       </div>
-      <div>
+      <div className="cuadrado contenedor ">
       <h1>¿Que hacemos?</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum at
@@ -25,7 +25,7 @@ function home() {
           voluptas!
         </p>
       </div>
-      <div>
+      <div className="cuadrado contenedor ">
         <h1>¿Porque legalVerse?</h1>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam

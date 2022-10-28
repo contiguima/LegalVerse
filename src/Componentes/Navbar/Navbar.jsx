@@ -27,15 +27,15 @@ function navbar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            
             <NavDropdown title="Servicios" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Gestión</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Asistencias</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Asistencias
+              </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Creación</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Firma digital</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Ofertas</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Revisioón</NavDropdown.Item>
-
+              <NavDropdown.Item href="#action/3.3">Revisión</NavDropdown.Item>
               <NavDropdown.Divider />
             </NavDropdown>
             <Nav.Link href="/Nosotros">Nosotros</Nav.Link>
@@ -46,7 +46,6 @@ function navbar() {
             <a href="/Paginas/Login">Iniciar Sesión</a>
           </Navbar.Text>
         </Navbar.Collapse>
-
       </Container>
     </Navbar>
   );
