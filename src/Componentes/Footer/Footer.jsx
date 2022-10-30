@@ -1,7 +1,7 @@
 import React from 'react'
 import LogoGrande from '../../assets/img/LOGO.png';
 
-const footer = () => {
+const Footer = () => {
   return (
     <footer className='pie-pagina'>
       <div className="grupo-1">
@@ -34,4 +34,4 @@ const footer = () => {
   );
 }
 
-export default footer
+export default Footer;

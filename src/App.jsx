@@ -6,6 +6,12 @@ import Home from './Componentes/Paginas/Home'
 import Login from './Componentes/Paginas/Login'
 import CreateAccount from './Componentes/Paginas/Create'
 import Nosotros from './Componentes/Paginas/Nosotros'
+import Creacion from './Componentes/Servicios/CreacionContrato'
+import Firma from './Componentes/Servicios/FirmaDigital'
+import Gestion from './Componentes/Servicios/Gestion'
+import Ofertas from './Componentes/Servicios/Oferta'
+import Revision from './Componentes/Servicios/Revision'
+import Asistencia from './Componentes/Servicios/Asistencia'
 
 function App() {
    return (
@@ -13,13 +19,20 @@ function App() {
       <Navbar/>
         <Routes>
          <Route path="/" element={ <Home />}/>
+         <Route path="/Paginas/Nosotros" element={<Nosotros/>}/>
          <Route path="/Paginas/Login" element={<Login/>}/>
          <Route path="/Paginas/Create" element={<CreateAccount/>}/>
-         <Route path="/Nosotros" element={<Nosotros/>}/>
+         <Route path="/Servicios/Creacion" element={<Creacion/>}/>
+         <Route path="/Servicios/Firma" element={<Firma/>}/>
+         <Route path="/Servicios/Gestion" element={<Gestion/>}/>
+         <Route path="/Servicios/Ofertas" element={<Ofertas/>}/>
+         <Route path="/Servicios/Revision" element={<Revision/>}/>
+         <Route path="/Servicios/Asistencia" element={<Asistencia/>}/>
+
         </Routes>
         <Footer/>
     </div>    
   )
 }
 
-export default App
+export default App;

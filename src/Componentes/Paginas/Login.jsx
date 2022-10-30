@@ -1,12 +1,14 @@
 import React from 'react'
 //import Imagen from "./img/placeholder.png";
 
-const login = () => {
+function Login () {
   return (
     <div>
-      
+      <form action="post" method="post">
+        
+      </form>
     </div>
   )
 }
 
-export default login
+export default Login

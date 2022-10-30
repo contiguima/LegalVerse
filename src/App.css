@@ -29,7 +29,7 @@ p {
   text-align: center;
 }
 .texto-encima {
-  position: absolute;
+  position: relative;
   top: 10px;
   left: 10px;
 }
@@ -38,4 +38,12 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.rectangulo {
+  width: 100%; /* Ancho de 150 píxeles */
+  height: 40%; /* Alto de 150 píxeles */
+  background: #c9d4ff; /* Fondo de color rojo */
+  border: 1px solid #000;
+  text-align: center;
 }

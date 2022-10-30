@@ -1,6 +1,7 @@
 import React from "react";
 import homeImage from "../../assets/img/abogados-contrato.jpg";
-function home() {
+import scrollImagen from "../../assets/img/image 4.png"
+function Home() {
   return (
     <div className="App">
       <div>
@@ -34,11 +35,13 @@ function home() {
           provident ad officiis.
         </p>
       </div>
-      <div>
-
+      <div className="rectangulo contenedor">
+        <h1>Soluciones de LegalVerse</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo necessitatibus accusamus distinctio corporis assumenda veniam voluptatum minus, cumque molestias, dolores nostrum placeat quam. Consequatur reprehenderit laboriosam aliquam alias incidunt quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia incidunt earum maiores hic, pariatur aspernatur minima vitae perferendis nemo illo officia aperiam accusantium veniam esse debitis corrupti magnam sit velit?</p>
+        <img src={scrollImagen} width="20%" height="auto" align="right" />
       </div>
     </div>
   );
 }
 
-export default home;
+export default Home;
