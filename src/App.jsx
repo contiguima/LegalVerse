@@ -4,7 +4,7 @@ import Footer from "./Componentes/Footer/Footer";
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./Componentes/Paginas/Home";
 import Login from "./Componentes/Paginas/Login";
-import CreateAccount from "./Componentes/Paginas/Create";
+import Register from "./Componentes/Paginas/Register";
 import Nosotros from "./Componentes/Paginas/Nosotros";
 import Creacion from "./Componentes/Servicios/CreacionContrato";
 import Firma from "./Componentes/Servicios/FirmaDigital";
@@ -23,7 +23,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Paginas/Nosotros" element={<Nosotros />} />
           <Route path="/Paginas/Login" element={<Login />} />
-          <Route path="/Paginas/Create" element={<CreateAccount />} />
+          <Route path="/Paginas/Register" element={<Register />} />
           <Route path="/Servicios/Creacion" element={<Creacion />} />
           <Route path="/Servicios/Firma" element={<Firma />} />
           <Route path="/Servicios/Gestion" element={<Gestion />} />

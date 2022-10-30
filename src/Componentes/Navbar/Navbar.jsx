@@ -120,7 +120,7 @@ function navbar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/Paginas/Login">Iniciar Sesión</Nav.Link>
-            <Nav.Link href="/Paginas/Create">Registrase</Nav.Link>
+            <Nav.Link href="/Paginas/Register">Registrase</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
