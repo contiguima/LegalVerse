@@ -12,7 +12,7 @@ import Gestion from "./Componentes/Servicios/Gestion";
 import Ofertas from "./Componentes/Servicios/Oferta";
 import Revision from "./Componentes/Servicios/Revision";
 import Asistencia from "./Componentes/Servicios/Asistencia";
-import { AuthProvider } from "../context/authContext";
+import { AuthProvider } from "./Context/authContext";
 
 function App() {
   return (
