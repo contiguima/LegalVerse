@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { useAuth } from "../../Context/AuthContext";
+import { useAuth } from "../Context/AuthContext";
 import { Alert } from "../Alert";
 
 export default function Login() {
@@ -92,7 +92,7 @@ export default function Login() {
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="submit"
           >
-            Iniciar Sesion
+            Sign In
           </button>
           <a
             className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
@@ -109,6 +109,12 @@ export default function Login() {
       >
         Google login
       </button>
+      <p className="my-4 text-sm flex justify-between px-3">
+        Don't have an account?
+        <Link to="/register" className="text-blue-700 hover:text-blue-900">
+          Register
+        </Link>
+      </p>
     </div>
   );
 }

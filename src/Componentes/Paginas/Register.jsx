@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { useAuth } from "../../Context/AuthContext";
-//import { Alert } from "./Alert";
+import { useAuth } from "../Context/AuthContext";
+import { Alert } from "../Alert";
 
 export default function Register() {
   const { signup } = useAuth();
@@ -28,13 +28,11 @@ export default function Register() {
   return (
     <div className="w-full max-w-xs m-auto text-black">
       {error && <Alert message={error} />}
+
       <form
         onSubmit={handleSubmit}
         className="bg-white shadow-md rounded px-8 pt-6 pb-6 mb-4"
       >
-        <div>
-          
-        </div>
         <div className="mb-4">
           <label
             htmlFor="email"
@@ -69,7 +67,12 @@ export default function Register() {
           Register
         </button>
       </form>
-      <p className="my-4 text-sm flex justify-between px-3"></p>
+      <p className="my-4 text-sm flex justify-between px-3">
+        Already have an Account?
+        <Link to="/login" className="text-blue-700 hover:text-blue-900">
+          Login
+        </Link>
+      </p>
     </div>
   );
 }
